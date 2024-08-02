@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Main-Container, .Admin-login, .Student-login {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1, h2, h3 {
+    color: #444;
+    margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 15px 0; /* Increased margin for more gap between buttons */
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+    background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+p {
+    color: #e74c3c;
+    font-size: 14px;
+}
+
+/* Specific styles for ExamSetup page */
+.ExamSetup {
+    text-align: left;
+    padding: 20px;
+}
+
+.ExamSetup form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Specific styles for GenerateQuestions page */
+.loading {
+    text-align: center;
+    font-size: 18px;
+    color: #007bff;
+}
+
+/* List styles */
+li {
+    background: #e7e7e7;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+}
+
+/* Specific styles for AddStudents page */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.AddStudents ul li div {
+    margin-bottom: 10px;
+}
+
+/* Specific styles for ExamPage */
+.timer {
+    font-size: 1.8em;
+    color: #e74c3c;
+    margin-bottom: 15px;
+}
+
+.question {
+    margin: 25px 0;
+}
+
+.option {
+    background: #f4f4f4;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.option:hover {
+    background: #e4e4e4;
+}
+
+.selected {
+    border: 2px solid #007bff;
+}
+
+.correct {
+    background: #d4edda;
+}
+
+.incorrect {
+    background: #f8d7da;
+}
+
+.result {
+    font-size: 1.8em;
+    margin: 25px 0;
+    color: #28a745;
 }
