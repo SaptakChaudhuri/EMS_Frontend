@@ -26,9 +26,9 @@ const AdminLogin = () => {
             <h3>Please Enter Your Credentials</h3>
             <form onSubmit = {handleSubmit}>
             <div>
-                <label>Username:</label>
-                <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} required />
-                <label>Password:</label>
+                <label>Username (default:Admin@1234):</label>
+                <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} required/>
+                <label>Password (default:1234):</label>
                 <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
             </div>
             <button type="submit">Login</button>
